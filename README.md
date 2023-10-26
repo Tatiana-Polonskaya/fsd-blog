@@ -1,27 +1,46 @@
-# React + TypeScript + Vite
+# Список постов {JSON} Placeholder 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**О проекте:**\
+  Сайт для получения и вывода информации о постах, полученных с помощью {JSON} Placeholder.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Функционал:**
+- Главная страница:
+  - Вывод первоначальных 20 постов
+  - Подгрузка контента при прокрутке
+  - Переход на станицу с подробной информацией
+- Пост:
+  - Запрос на получение информации о посте
+  - Возврат на главную страницу
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+----
+## Содержание
+- [Запуск проекта](#запуск-проекта)
+- [Архитектура проекта](#архитектура-проекта)
+- [Технологии](#технологии)
+- [API](#api)
 
-- Configure the top-level `parserOptions` property like this:
+## Запуск проекта
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- `npm install` - Установка зависимостей
+- `npm run dev` - Запуск проекта для разработки
+- `npm run build` - Сборка проекта
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Архитектура проекта
+
+Проект реализован в соответствии с методологией [Feature-Sliced Design](https://feature-sliced.design/)
+
+
+## Технологии
+
+- [Vite](https://vitejs.dev/)
+- [React](https://react.dev/blog/2023/03/16/introducing-react-dev)
+- [TypeScript](https://www.typescriptlang.org/)
+- [RTK Query](https://redux-toolkit.js.org/rtk-query/overview)
+- [React Router DOM 6](https://reactrouter.com/en/main)
+- [Ant Design 5.0](https://ant.design/)
+
+## API
+
+- [JSON Placeholder](https://jsonplaceholder.typicode.com/)
