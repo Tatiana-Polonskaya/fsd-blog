@@ -1,0 +1,22 @@
+.rowcard {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px;
+    border: 1px solid var(--color-dark);
+    border-radius: 20px;
+    gap: 10px;
+}
+
+.rowtitle {
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .rowcard {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
